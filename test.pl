@@ -7,7 +7,7 @@
 
 use Test;
 BEGIN { plan tests => 20 };
-use WinConsole;
+use Term::WinConsole;
 ok(1); # If we made it this far, we're ok.
 
 #########################
@@ -16,7 +16,7 @@ ok(1); # If we made it this far, we're ok.
 # its man page ( perldoc Test ) for help writing this test script.
 
 
-ok($con = WinConsole->new('HELLO',80,25,1,1,'~',1));
+ok($con = Term::WinConsole->new('HELLO',80,25,1,1,'~',1));
 ok($con->home());
 ok($con->gotoCR(1,1));
 ok($index = $con->setWindow('Login',5,5,55,5,1,1,'.'));

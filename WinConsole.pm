@@ -1,4 +1,4 @@
-package WinConsole;
+package Term::WinConsole;
 
 require 5.005_62;
 use strict;
@@ -14,7 +14,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 $|++;
 
